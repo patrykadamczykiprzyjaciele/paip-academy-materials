@@ -1,2 +1,1 @@
-# paip-academy-materials
-Materials for PAiP Academy
+# Materials for PAiP Academy
