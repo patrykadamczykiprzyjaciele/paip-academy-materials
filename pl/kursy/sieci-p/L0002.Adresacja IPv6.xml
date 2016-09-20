@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="http://www.learn.paip.com.pl/resources/xml.lesson.css"?>
+<lesson lang="pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.learn.paip.com.pl/resources/lesson.xsd">
+    <information>
+        <course>Kurs Podstaw Sieci Komputerowych</course>
+        <title>Lekcja 1 - Adresacja IPv4</title>
+    </information>
+    <main xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+        <h1>Adresacja IP</h1>
+        <h3>W adresacji IPv6 są pewne typy adresów</h3>
+        <ol>
+          <li>
+            Adres Lokalny
+            <ul>
+              <li>
+                FE80::/10 | Odpowiednik APIPA
+              </li>
+            </ul>
+          </li>
+          <li>
+            Unikalne Adresy Lokalne
+            <ul>
+              <li>
+                FC00::/7 | Odpowiednik Adresacji Prywatnej
+              </li>
+            </ul>
+          </li>
+          <li>
+            Adres Pętli Zwrotnej
+            <ul>
+              <li>
+                ::1/128 | Odpowiednik 127.0.0.1
+              </li>
+            </ul>
+          </li>
+          <li>
+            Adresy Multicast
+            <ul>
+              <li>
+                FF00::/8 | Odpowiednik Klasy D
+              </li>
+            </ul>
+          </li>
+          <li>
+            Adresy Eksperymentalne
+            <ul>
+              <li>
+                2001:db8::/32 | Odpowiednik Klasy E
+              </li>
+            </ul>
+          </li>
+          <li>
+            Adres Nieokreślony
+            <ul>
+              <li>
+                ::/128
+              </li>
+            </ul>
+          </li>
+          <li>
+            Adres IPv4 > IPv6
+            <ul>
+              <li>
+                ::ffff:XXX:XXX:XXX:XXX
+              </li>
+            </ul>
+          </li>
+          <!--
+          ::/128 – adres nieokreślony (zawierający same zera).
+::1/128 – loopback, adres wskazujący na host lokalny.
+::/96 – pula zarezerwowana dla zachowania kompatybilności z protokołem IPv4 (pierwsze 96 bitów stanowią 0, pozostają 32 bity na adresy w formacie IPv4).
+::ffff:0:0/64 – jw., ale pozwala wykorzystywać komunikację według protokołu IPv6 w sieci IPv4.
+2001:7f8::/32 – pula zarezerwowana dla punktów wymiany ruchu, każdy z nich dostaje jedną podsieć /48.
+2001:db8::/32 – pula wykorzystywana w przykładach i dokumentacji – nigdy nie będzie wykorzystywana produkcyjnie.
+2002::/24 – adresy typu 6to4. Są to adresy wygenerowane na podstawie istniejących, publicznych adresów IPv4, dostępne dla każdego użytkownika.
+3ffe::/16 – adresy testowej sieci 6bone (adresy zostały wycofane 6 czerwca 2006 w związku z zakończeniem działania 6bone).
+fd00::/7 – pula lokalnych unikatowych adresów IPv6 typu unicast (RFC 4193), będąca odpowiednikiem adresów prywatnych IPv4, choć zgodnie z nazwą, powinny być unikatowe na świecie.
+fe80::/10 – pula link-local określa adresy w obrębie jednego łącza fizycznego (np. segmentu sieci Ethernet). Pakiety z tej puli nie są przekazywane poza podsieć, jej działanie jest analogiczne do automatycznie konfigurowanych adresów z puli 169.254.0.0/16 w IPv4.
+fec0::/10 – pula site-local określa adresy w obrębie jednej lokalnej organizacji. Obecnie nie zaleca się wykorzystywania tej puli; przyszłe implementacje IPv6 nie będą musiały obsługiwać tej puli.
+ff00::/8 – pula multicastowa używana do komunikacji multicast.
+          -->
+        </ol>
+    </main>
+</lesson>
