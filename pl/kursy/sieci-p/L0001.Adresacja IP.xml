@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="http://www.learn.paip.com.pl/resources/xml.lesson.css"?>
+<lesson lang="pl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.learn.paip.com.pl/resources/lesson.xsd">
+    <information>
+        <course>Kurs Podstaw Sieci Komputerowych</course>
+        <title>Lekcja 1 - Adresacja IPv4</title>
+    </information>
+    <main xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+        <h1>Adresacja IP</h1>
+        <h3>W adresacji IP są pewne typy adresacji</h3>
+        <ol>
+          <li>
+            Adresacja Klasowa:
+            <ul>
+              <li>
+                Klasa A
+                <ul>
+                  <li>Używana do dużych firm</li>
+                  <li>Pierwszy bit adresu musi być zerem</li>
+                  <li>Zakres Adresów Klasy A: 0.0.0.0 - 127.255.255.255</li>
+                  <li>Maska Domyślna Adresów Klasy A to: 255.0.0.0</li>
+                  <li>Zakres Adresów Prywatnych Klasy A: 10.0.0.0 /8 | 10.0.0.0 - 10.255.255.255</li>
+                  <li>
+                    Adresy Zarezerwowane w klasie A to:
+                    <ul>
+                      <li>127.0.0.1 - 127.255.255.255 | Pętla Zwrotna</li>
+                      <li>0.0.0.0 /0 | Adres Sieci Domyślnej</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Klasa B
+                <ul>
+                  <li>Używana do średnich firm</li>
+                  <li>Pierwszy bit adresu musi być jedynką a drugi zerem</li>
+                  <li>Zakres Adresów Klasy B: 128.0.0.0 - 191.255.255.255</li>
+                  <li>Maska Domyślna Adresów Klasy B to: 255.255.0.0</li>
+                  <li>Zakres Adresów Prywatnych Klasy B: 171.16.0.0 /12 | 171.16.0.0 - 171.31.255.255</li>
+                  <li>
+                    Adresy Zarezerwowane w klasie B to:
+                    <ul>
+                      <li>169.254.0.1 – 169.254.255.254 | APIPA</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Klasa C
+                <ul>
+                  <li>Używana do małych firm</li>
+                  <li>Pierwsze bity adresu muszą być 110</li>
+                  <li>Zakres Adresów Klasy C: 192.0.0.0 - 223.255.255.255</li>
+                  <li>Maska Domyślna Adresów Klasy C to: 255.255.255.0</li>
+                  <li>Zakres Adresów Prywatnych Klasy C: 192.168.0.0 /16 | 192.168.0.0 - 192.168.255.255</li>
+                </ul>
+              </li>
+              <li>
+                Klasa D
+                <ul>
+                  <li>Używana do multicastu</li>
+                  <li>Pierwsze bity adresu muszą być 1110</li>
+                  <li>Zakres Adresów Klasy D: 224.0.0.0 - 239.255.255.255</li>
+                </ul>
+              </li>
+              <li>
+                Klasa E
+                <ul>
+                  <li>Używana do celów eksperymentalnych</li>
+                  <li>Pierwsze bity adresu muszą być 1111</li>
+                  <li>Zakres Adresów Klasy E: 224.0.0.0 - 255.255.255.255</li>
+                  <li>
+                    Adresy Zarezerwowane w klasie E to:
+                    <ul>
+                      <li>255.255.255.255 | Adres Rozgłoszeniowy Sieci Głównej</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+    </main>
+</lesson>
